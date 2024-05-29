@@ -3,11 +3,9 @@ CREATE DATABASE Gestran COLLATE Latin1_General_100_CI_AI
 
 USE Gestran;
 
-SET DATEFORMAT dmy;
-
 CREATE TABLE Venda (
   Id        INT NOT NULL IDENTITY,
-  DataVenda DATE NOT NULL,
+  DataVenda DATETIME NOT NULL,
   Vendedor  VARCHAR(12) NOT NULL,
   Valor     MONEY NOT NULL,
   Descto    MONEY,
